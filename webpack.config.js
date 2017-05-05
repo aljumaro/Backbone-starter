@@ -10,12 +10,34 @@ const config = {
 	},
 	module: {
 		rules: [
-			{test: /\.js$/, use: 'babel-loader'}
+			{
+				test: /\.js$/, 
+				exclude: /node_modules/,
+				use: {
+					loader: 'babel-loader',
+			        options: {
+			          presets: ['es2015']
+			        }
+			    }
+			}
 		]
+	},
+	resolve: {
+		alias: {
+			jquery: 'jquery/src/jquery.js',
+			underscore: 'underscore/underscore.js',
+			backbone: 'backbone/backbone.js'
+		}
 	},
 	plugins: [
 		new webpack.optimize.UglifyJsPlugin(),
-		new HtmlWebpackPlugin({template: './index.html'})
+		new HtmlWebpackPlugin({template: './index.html'}),
+		new webpack.ProvidePlugin({
+			$: 'jquery',
+			jQuery: 'jquery',
+			_: 'underscore',
+			Backbone: 'backbone'
+		})
 	]
 }
 
