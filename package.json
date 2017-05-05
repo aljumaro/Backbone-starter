@@ -1,0 +1,25 @@
+{
+  "name": "backbone-starter",
+  "version": "1.0.0",
+  "description": "Backbone-webpack-project-starter",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aljumaro/Backbone-starter.git"
+  },
+  "keywords": [
+    "backbone",
+    "webpack",
+    "starter",
+    "seed"
+  ],
+  "author": "Aljumaro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aljumaro/Backbone-starter/issues"
+  },
+  "homepage": "https://github.com/aljumaro/Backbone-starter#readme"
+}
