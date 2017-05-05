@@ -1,11 +1,11 @@
-var _ = require('underscore');
-var $ = require('jquery');
-require('backbone');
+const _ = require('underscore');
+const $ = require('jquery');
+const Backbone = require('backbone');
 
-var AppView = require('./app.view')
+const AppView = require('./app.view')
 
 $(function() {
-  var view = new AppView({
+  const view = new AppView({
     el: 'app'
   });
 });

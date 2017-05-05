@@ -1,4 +1,4 @@
-var {View} = require('backbone');
+const {View} = require('backbone');
 
 module.exports = View.extend({
   initialize: function() {
