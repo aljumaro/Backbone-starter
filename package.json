@@ -4,7 +4,8 @@
   "description": "Backbone-webpack-project-starter",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "build": "webpack -w --colors"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,12 @@
   "bugs": {
     "url": "https://github.com/aljumaro/Backbone-starter/issues"
   },
-  "homepage": "https://github.com/aljumaro/Backbone-starter#readme"
+  "homepage": "https://github.com/aljumaro/Backbone-starter#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "html-webpack-plugin": "^2.28.0",
+    "webpack": "^2.5.0"
+  }
 }
