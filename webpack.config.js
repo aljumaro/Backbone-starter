@@ -38,7 +38,8 @@ const config = {
 			_: 'underscore',
 			Backbone: 'backbone'
 		})
-	]
+	],
+	devtool: 'eval'
 }
 
 module.exports = config;
